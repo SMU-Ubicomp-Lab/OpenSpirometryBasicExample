@@ -1,6 +1,6 @@
 [submodule "AudioDSPUtils"]
 	path = AudioDSPUtils
-	url = ../AudioDSPUtils/
+	url = https://github.com/SMU-Ubicomp-Lab/AudioDSPUtils.git
 [submodule "OpenSpirometryCore"]
 	path = OpenSpirometryCore
-	url = ../OpenSpirometryCore/
+	url = https://github.com/SMU-Ubicomp-Lab/OpenSpirometryCore.git
