@@ -1,0 +1,6 @@
+[submodule "AudioDSPUtils"]
+	path = AudioDSPUtils
+	url = ../AudioDSPUtils/
+[submodule "OpenSpirometryCore"]
+	path = OpenSpirometryCore
+	url = ../OpenSpirometryCore/
