@@ -24,6 +24,7 @@
 		B658FFB71BFBA6A5009EE2CA /* FlowVolumeDataAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = B658FFB11BFBA6A5009EE2CA /* FlowVolumeDataAnalyzer.m */; };
 		B658FFB81BFBA6A5009EE2CA /* SpirometerEffortAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = B658FFB41BFBA6A5009EE2CA /* SpirometerEffortAnalyzer.m */; };
 		B658FFB91BFBA6A5009EE2CA /* SpirometryWhistle.m in Sources */ = {isa = PBXBuildFile; fileRef = B658FFB61BFBA6A5009EE2CA /* SpirometryWhistle.m */; };
+		B658FFBB1BFBD7C6009EE2CA /* SpirometerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B658FFBA1BFBD7C6009EE2CA /* SpirometerConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		B658FFB41BFBA6A5009EE2CA /* SpirometerEffortAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpirometerEffortAnalyzer.m; path = OpenSpirometryCore/SpirometerEffortAnalyzer.m; sourceTree = SOURCE_ROOT; };
 		B658FFB51BFBA6A5009EE2CA /* SpirometryWhistle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpirometryWhistle.h; path = OpenSpirometryCore/SpirometryWhistle.h; sourceTree = SOURCE_ROOT; };
 		B658FFB61BFBA6A5009EE2CA /* SpirometryWhistle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpirometryWhistle.m; path = OpenSpirometryCore/SpirometryWhistle.m; sourceTree = SOURCE_ROOT; };
+		B658FFBA1BFBD7C6009EE2CA /* SpirometerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpirometerConstants.m; path = OpenSpirometryCore/SpirometerConstants.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				B658FFB01BFBA6A5009EE2CA /* FlowVolumeDataAnalyzer.h */,
 				B658FFB11BFBA6A5009EE2CA /* FlowVolumeDataAnalyzer.m */,
 				B658FFB21BFBA6A5009EE2CA /* SpirometerConstants.h */,
+				B658FFBA1BFBD7C6009EE2CA /* SpirometerConstants.m */,
 				B658FFB31BFBA6A5009EE2CA /* SpirometerEffortAnalyzer.h */,
 				B658FFB41BFBA6A5009EE2CA /* SpirometerEffortAnalyzer.m */,
 				B658FFB51BFBA6A5009EE2CA /* SpirometryWhistle.h */,
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B658FFB91BFBA6A5009EE2CA /* SpirometryWhistle.m in Sources */,
+				B658FFBB1BFBD7C6009EE2CA /* SpirometerConstants.m in Sources */,
 				B658FFAD1BFBA68D009EE2CA /* Novocaine.m in Sources */,
 				B63612281B1CC38500289665 /* SpiroAnalyzeViewController.m in Sources */,
 				B658FFAE1BFBA68D009EE2CA /* PeakFinder.m in Sources */,

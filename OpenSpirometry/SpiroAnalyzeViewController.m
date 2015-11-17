@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.spiro = [[SpirometerEffortAnalyzer alloc] init];
+    self.spiro = [[SpirometerEffortAnalyzer alloc] init]; // get access to the singelton class
     self.spiro.delegate = self;
     
     self.spiro.prefferredAudioMaxUpdateIntervalInSeconds = 1.0/24.0; // the default is 30FPS, so setting lower
@@ -36,7 +36,7 @@
     // most likely this has a maximum update rate of about 100 FPS
     
     // **for debugging**: this turns on the debug mode for reading the effort from a file (only m4a currently supported)
-    //[self.spiro activateDebugAudioModeWithWAVFile:@"VortexWhistleRed"]; // default audio file name
+    [self.spiro activateDebugAudioModeWithWAVFile:@"VortexWhistleRed"]; // default audio file name
     
     // if using the microphone, this will save each spirometry effort audio to the documents directory (
     [self.spiro shouldSaveSeparateEffortsToDocumentDirectory:YES];
@@ -90,13 +90,12 @@
 
 
 -(void)didEndEffortWithResults:(NSDictionary*)results{
-    // right now results are an empty dictionary
+    // the results of the effort are stored as key/value pairs
+    NSLog(@"Keys for results Dictionary:%@",[results allKeys]); // no need to memorizes these keys
     
-    // in the future the results of the effort will all be stored as key/value pairs
-    for(int i=0;i<((NSArray*)results[@"FlowCurveInLitersPerSecond"]).count;i++){
-        printf("%.4f\t%.4f\n",[results[@"TimeStampsForFlowAndVolume"][i] floatValue],[results[@"FlowCurveInLitersPerSecond"][i] floatValue]);
-    }
-    //NSLog(@"%@",results[@"FlowCurveInLitersPerSecond"]);
+    //you can access the results using global constants that start with "SpiroEffort_"
+    NSLog(@"Filename is: %@",results[SpiroEffort_RecordedAudioFilenameForEffort]);
+    
     self.feedbackLabel.text = @"Effort Complete. Thanks!";
 }
 
